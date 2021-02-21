@@ -2,5 +2,5 @@ const base = require('./webpack.base.config');
 
 module.exports = {
   ...base,
-  mode: 'development',
+  mode: 'production',
 };
