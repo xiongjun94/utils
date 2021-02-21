@@ -1,4 +1,4 @@
-import _type from '@/check/type';
+import * as _type from '@/check/type';
 /**
  * @param {Number} number
  * @param {String} type floor | ceil | round

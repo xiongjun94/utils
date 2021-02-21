@@ -1,4 +1,4 @@
-import _type from '@/check/type';
+import * as _type from '@/check/type';
 
 /**
  * 判断是否为空
