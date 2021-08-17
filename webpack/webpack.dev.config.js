@@ -9,6 +9,6 @@ module.exports = {
     contentBase: '../dist',
     compress: true,
     port: 9000,
-    open: true,
-  },
+    open: true
+  }
 };

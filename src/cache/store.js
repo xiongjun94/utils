@@ -10,7 +10,7 @@ export const setStore = (params = {}) => {
     dataType: typeof (content),
     content,
     type,
-    datetime: new Date().getTime(),
+    datetime: new Date().getTime()
   };
   if (type) window.sessionStorage.setItem(name, JSON.stringify(obj));
   else window.localStorage.setItem(name, JSON.stringify(obj));
@@ -67,7 +67,7 @@ export const removeStore = (params = {}) => {
 export const getAllStore = (params = {}) => {
   const list = [];
   const {
-    type,
+    type
   } = params;
   if (type) {
     for (let i = 0; i <= window.sessionStorage.length; i++) {
@@ -75,8 +75,8 @@ export const getAllStore = (params = {}) => {
         name: window.sessionStorage.key(i),
         content: getStore({
           name: window.sessionStorage.key(i),
-          type: 'session',
-        }),
+          type: 'session'
+        })
       });
     }
   } else {
@@ -84,8 +84,8 @@ export const getAllStore = (params = {}) => {
       list.push({
         name: window.localStorage.key(i),
         content: getStore({
-          name: window.localStorage.key(i),
-        }),
+          name: window.localStorage.key(i)
+        })
       });
     }
   }

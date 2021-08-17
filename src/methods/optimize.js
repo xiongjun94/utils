@@ -6,7 +6,7 @@
  */
 export function debounce(func, wait, immediate) {
   let timeout;
-  return function () {
+  return function() {
     const context = this;
     const args = arguments;
     if (timeout) clearTimeout(timeout);
@@ -38,7 +38,7 @@ export function throttle(func, wait, type) {
   } else if (type === 2) {
     timeout = null;
   }
-  return function () {
+  return function() {
     const context = this;
     const args = arguments;
     if (type === 1) {

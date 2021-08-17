@@ -80,11 +80,11 @@ export function validatAlphabets(str) {
 }
 
 /* 验证pad还是pc */
-export const vaildatePc = function () {
+export const vaildatePc = function() {
   const userAgentInfo = navigator.userAgent;
   const Agents = ['Android', 'iPhone',
     'SymbianOS', 'Windows Phone',
-    'iPad', 'iPod',
+    'iPad', 'iPod'
   ];
   let flag = true;
   for (let v = 0; v < Agents.length; v++) {
@@ -148,7 +148,7 @@ export function cardid(code) {
     71: '台湾',
     81: '香港',
     82: '澳门',
-    91: '国外 ',
+    91: '国外 '
   };
   if (!validateNull(code)) {
     if (code.length === 18) {

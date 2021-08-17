@@ -13,5 +13,5 @@ export default {
   validate,
   format,
   optimize,
-  util,
+  util
 };
